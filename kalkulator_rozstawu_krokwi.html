@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Rozstawu Krokwi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/kalkulator_rozstawu_krokwi.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Handyman Logo"></a>
+    </header>
+
+    <main>
+        <h1>Kalkulator Rozstawu Krokwi</h1>
+        <div class="calculator">
+            <label for="szerokosc_dachu">Szerokość dachu (cm):</label>
+            <input type="number" id="szerokosc_dachu" step="0.1" placeholder="np. 600" required>
+
+            <label for="grubosc_krokwi">Grubość krokwi (cm):</label>
+            <input type="number" id="grubosc_krokwi" step="0.1" placeholder="np. 6" required>
+
+            <label for="ilosc_krokwi">Ilość krokwi:</label>
+            <input type="number" id="ilosc_krokwi" placeholder="np. 4" required>
+
+            <button id="obliczKrokiew">Oblicz</button>
+            <div id="wynik"></div>
+        </div>
+
+        <div class="info-box">
+            <p><strong>⚠️ Wskazówki:</strong></p>
+            <ul>
+                <li>Podaj szerokość dachu i ilość krokwi w centymetrach.</li>
+                <li>Kalkulator uwzględnia również szerokość krokwi w obliczeniach.</li>
+                <li>Otrzymasz dwa wyniki: <strong>Rozstaw krokwi (od środka do środka)</strong> oraz <strong>Rozstaw Pełny</strong> (wszystkie odległości w kolejności).</li>
+            </ul>
+        </div>
+
+        <div class="kafelki-kalkulatory">
+            <a href="kalkulator_spadku.html" class="kafelek">
+                <h3>Kalkulator Spadku</h3>
+            </a>
+            <a href="kalkulator_materialow.html" class="kafelek">
+                <h3>Kalkulator Materiałów</h3>
+            </a>
+            <a href="kalkulator_zaluzji.html" class="kafelek">
+                <h3>Kalkulator Systemów Żaluzji</h3>
+            </a>
+        </div>
+
+        <div class="home-button">
+            <a href="index.html">⬅ Powrót do strony głównej</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 HANDYMAN - Wszelkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>

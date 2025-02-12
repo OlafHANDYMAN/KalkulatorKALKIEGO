@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Systemów Żaluzji</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/kalkulator_zaluzji.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Handyman Logo"></a>
+    </header>
+
+    <main>
+        <h1>Kalkulator Systemów Żaluzji</h1>
+        <div class="calculator">
+            <label for="wysokosc">Podaj wysokość przestrzeni (cm):</label>
+            <input type="text" id="wysokosc" placeholder="np. 123,4 lub 123.4">
+            <button onclick="oblicz()">Oblicz</button>
+            <div id="wynik"></div>
+        </div>
+
+        <div class="info-box">
+            <p><strong>⚠️ Wskazówki:</strong></p>
+            <ul>
+                <li>Podaj wymiar w centymetrach, zaokrąglony do jednego miejsca po przecinku.</li>
+                <li>Jeśli planujesz zastosować ramkę, uwzględnij jej grubość w obliczeniach.</li>
+            </ul>
+        </div>
+
+<div class="kafelki-kalkulatory">
+    <a href="kalkulator_spadku.html" class="kafelek">
+        <h3>Kalkulator Spadku</h3>
+    </a>
+    <a href="kalkulator_materialow.html" class="kafelek">
+        <h3>Kalkulator Materiałów</h3>
+    </a>
+    <a href="kalkulator_rozstawu_krokwi.html" class="kafelek">
+        <h3>Kalkulator Rozstawu Krokwi</h3>
+    </a>
+</div>
+
+        <div class="home-button">
+            <a href="index.html">⬅ Powrót do strony głównej</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 HANDYMAN - Wszelkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>

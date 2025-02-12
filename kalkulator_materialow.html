@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Materiałów</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/kalkulator_materialow.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Handyman Logo"></a>
+    </header>
+
+    <main>
+        <h1>Kalkulator Materiałów</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+        
+<div class="calculator">
+    <form>
+        <label for="przekroj_s">Przekrój słupów/płatwi (cm):</label>
+        <input type="text" id="przekroj_s" placeholder="np. 10x10">
+
+        <label for="przekroj_k">Przekrój krokwi (cm):</label>
+        <input type="text" id="przekroj_k" placeholder="np. 5x15">
+
+        <label for="szerokosc">Szerokość konstrukcji (cm):</label>
+        <input type="number" id="szerokosc" step="0.1">
+
+        <label for="glebokosc">Głębokość konstrukcji (cm):</label>
+        <input type="number" id="glebokosc" step="0.1">
+
+        <label for="wymiar_s_zewn">Wymiar słupów zewnętrznych (cm):</label>
+        <input type="number" id="wymiar_s_zewn" step="0.1">
+
+        <label for="ilosc_s_zewn">Ilość słupów zewnętrznych:</label>
+        <input type="number" id="ilosc_s_zewn">
+
+        <label for="wymiar_s_sciana">Wymiar słupów przy ścianie (cm):</label>
+        <input type="number" id="wymiar_s_sciana" step="0.1">
+
+        <label for="ilosc_s_sciana">Ilość słupów przy ścianie:</label>
+        <input type="number" id="ilosc_s_sciana">
+
+        <label for="wypust_boczny">Wypust boczny (cm):</label>
+        <input type="number" id="wypust_boczny" step="0.1">
+
+        <label for="wypust_okapowy">Wypust okapowy (cm):</label>
+        <input type="number" id="wypust_okapowy" step="0.1">
+
+        <button type="button" onclick="obliczMaterialy()">Oblicz</button>
+    </form>
+    <div id="wynik"></div>
+
+</div>
+<div class="kafelki-kalkulatory">
+    <a href="kalkulator_zaluzji.html" class="kafelek">
+        <h3>Kalkulator Systemów</h3>
+    </a>
+    <a href="kalkulator_spadku.html" class="kafelek">
+        <h3>Kalkulator Spadku</h3>
+    </a>
+    <a href="kalkulator_rozstawu_krokwi.html" class="kafelek">
+        <h3>Kalkulator Rozstawu Krokwi</h3>
+    </a>
+</div>
+
+        <div class="home-button">
+            <a href="index.html">⬅ Powrót do strony głównej</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 HANDYMAN - Wszelkie prawa zastrzeżone</p>
+    </footer>
+</body>
+</html>
