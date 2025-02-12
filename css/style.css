@@ -314,4 +314,49 @@ h1 {
     .calculator {
         width: 95%;
     }
+} 
+
+/* Zapobieganie wystawaniu kafelków kalkulatorów poza ekran */
+.kafelki-kalkulatory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kafelki wyśrodkowane */
+    gap: 15px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Poprawka dla kafelków innych kalkulatorów */
+.kafelki-kalkulatory .kafelek {
+    width: 100%; /* Dostosowanie szerokości do ekranu */
+    max-width: 300px; /* Maksymalna szerokość */
+    text-align: center;
+    padding: 15px;
+    background-color: #3a3a3a;
+    color: #f4e1c1;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Efekt hover */
+.kafelki-kalkulatory .kafelek:hover {
+    background-color: #e1be89;
+    transform: scale(1.05);
+    color: #1e1e1e;
+}
+
+/* Poprawki dla małych ekranów (telefony) */
+@media (max-width: 768px) {
+    .kafelki-kalkulatory {
+        flex-direction: column; /* Kafelki jeden pod drugim */
+        align-items: center;
+        width: 100%;
+    }
+
+    .kafelki-kalkulatory .kafelek {
+        width: 90%; /* Zajmują prawie całą szerokość */
+        max-width: 320px; /* Zapobiega rozciągnięciu */
+        font-size: 16px;
+    }
 }
