@@ -266,3 +266,52 @@ footer {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+/* Ustawienie szerokości strony na 100% ekranu */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Zapobieganie rozjeżdżaniu się kontenerów */
+main {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* Skalowanie kafelków kalkulatorów na mniejszych ekranach */
+.menu, .kafelki-kalkulatory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.kafelek, .kafel {
+    width: calc(100% - 30px); /* Kafelki dostosowane do ekranu */
+    max-width: 320px; /* Maksymalna szerokość */
+    padding: 16px;
+    font-size: 18px;
+}
+
+/* Dostosowanie tekstu do mniejszych ekranów */
+h1 {
+    font-size: 22px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .menu, .kafelki-kalkulatory {
+        flex-direction: column; /* Kafelki pod sobą na telefonach */
+        align-items: center;
+    }
+
+    .kafelek, .kafel {
+        width: 90%; /* Lekko zmniejszone, by były czytelne */
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .calculator {
+        width: 95%;
+    }
+}
